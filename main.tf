@@ -8,6 +8,6 @@ resource "aws_instance" "three" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "dev-server"
+    Name = "test-server"
   }
 }
