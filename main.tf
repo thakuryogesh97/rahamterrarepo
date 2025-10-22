@@ -1,11 +1,11 @@
 provider "aws" {
-region = "us-east-1"
+region = "eu-north-1"
 }
 
-resource "aws_instance" "three" {
+resource "aws_instance" "one" {
   count         = 2
-  ami           = "ami-00ca32bbc84273381"
-  instance_type = "t2.micro"
+  ami           = "ami-0854d4f8e4bd6b834"
+  instance_type = "t3.micro"
 
   tags = {
     Name = "test-server"
